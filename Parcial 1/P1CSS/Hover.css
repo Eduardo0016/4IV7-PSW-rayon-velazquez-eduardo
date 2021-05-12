@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+
+}
+body{
+    background-color:#5aceeb;
+}
+.title{
+    font-size: 3rem;
+    text-align: center;
+    color: rgba(159, 88, 168, 0.667);
+    margin: 1em;
+}
+
+.cont{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-content:center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.cont-div{
+    height: 8em;
+    width: 8em ;
+    margin: .2em;
+    background-color: rgb(155, 98, 58);
+}
+
+#div1{
+    background-color: rgb(17, 10, 126);
+}
+
+#div1:hover{
+    height: 8.4em;
+    width: 8.4em ;
+    box-shadow: 0 0 1em 0 #000;
+}
+
+#div2{
+    background-color: rgb(16, 83, 16);
+}
+
+#div2:hover{
+    height: 8.4em;
+    width: 8.4em ;
+    box-shadow: 0 0 1em 0 #000;
+}
+
+#div3{
+    background-color: rgb(255, 236, 60);
+}
+
+#div3:hover{
+    height: 8.4em;
+    width: 8.4em ;
+    box-shadow: 0 0 1em 0 #000;
+}
+
+#div4{
+    background-color: rgb(144, 11, 11);
+}
+
+#div4:hover{
+    height: 8.4em;
+    width: 8.4em ;
+    box-shadow: 0 0 1em 0 #000;
+}
+
+#div5{
+    background-color: rgb(218, 77, 213);
+}
+
+#div5:hover{
+    height: 8.4em;
+    width: 8.4em ;
+    box-shadow: 0 0 1em 0 #000;
+}
