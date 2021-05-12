@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/eJS4.css">
+    <script src="JS/eJS4.js"></script>
+    <title>Ejercicio 4</title>
+</head>
+
+<body>
+    <h1>Ejercicio 4</h1>
+    <form action="" class="formulario" name="form" method="POST">
+        <p>
+            Un estudiante desea saber cual será su calificación final si dicha calificación se compone de:
+            <ul>
+                <li>55% promedio calificación parcial</li>
+                <li>30% Calificación de examen final</li>
+                <li>15% trabajo final</li>
+            </ul> 
+
+        </p>
+        <div>
+            <input type="text" placeholder="% 1er parcial"      class="input-txt" name="par1" onkeypress="return ValidarN(event)" maxlength="3" >
+            <input type="text" placeholder="% 2do parcial"      class="input-txt" name="par2" onkeypress="return ValidarN(event)" maxlength="3">
+            <input type="text" placeholder="% 3er parcial"      class="input-txt" name="par3" onkeypress="return ValidarN(event)" maxlength="3">
+            <input type="text" value="% total de la evaluación" class="input-txt" name="evTotal" readonly="readonly">
+            <input type="text" placeholder="% del examen obtenido sobre 100"  class="input-txt" name="exFin" onkeypress="return ValidarN(event)" maxlength="3">
+            <input type="text" placeholder="% del trabajo obtenido sobre 100" class="input-txt" name="trFin" onkeypress="return ValidarN(event)" maxlength="3">
+            <input type="text" value="Calificación final: 0.0" class="input-txt" name="calfin" readonly="readonly" id="width80">
+            <input type="button" value="Calcular" class="input-btn" name="bCalcular" onclick="return Calcular()">
+            <input type="button" value="Borrar" class="input-btn" name="bBorrar" onclick="return Borrar()">
+        </div>
+    </form>
+</body>
+
+</html>

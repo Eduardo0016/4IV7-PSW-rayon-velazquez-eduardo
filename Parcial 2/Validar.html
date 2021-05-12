@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="P2CSS/Validar.css">
+    <script src="P2JS/Validar.js" type="text/JavaScript" language="JavaScript"></script>
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form  action="Validar.html" class="miForm" method="GET" name="form" onsubmit="return validar(this)">
+        <h2 class="titulo">Validar Formulario</h2>
+        <div class="input-cont">
+            <input type="text" maxlength="30" placeholder="Nombre" name="nombre"  class="input w42"  >
+            <input type="text" maxlength="2"  placeholder="edad"   name="age"   class="input w42"  >
+            <input type="text" maxlength="30" placeholder="Correo" name="email" class="input w100" >
+            <input type="submit" value="Enviar" name="enviar" class="btn bSubmit">
+            <input type="reset" value="Borrar"  name="borrar" class="btn bReser">
+        </div>
+
+    </form>
+</body>
+
+</html>

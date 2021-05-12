@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="CSS/eJS1.css">
+    <script src="JS/eJS1.js"></script>
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <h1 class="title">Ejercicio 1</h1>
+    <form method="POST" class="formulario" name="form">
+        <p>
+            Supanga que un individuo desea invertir su capital en un banco y desea saber cuánto dinero ganará en un mes si 
+            el banco paga a razón de 2% mensual cada mes
+        </p>
+        <div>
+            <input type="text"   class="input-txt" name="valor"  placeholder="Escriba el monto" onkeypress="return validarn(event)">
+            <input type="text"   class="input-txt" name="textread" value="En espera..." readonly="readonly"  >
+            <input type="button" class="input-btn" name="calcu" onclick="return Calcular()" value="Calcular">
+            <input type="button" class="input-btn" name="borrar" onclick="return Borrar()" value="Borrar">
+        </div>
+    </form>
+
+
+</body>
+
+</html>

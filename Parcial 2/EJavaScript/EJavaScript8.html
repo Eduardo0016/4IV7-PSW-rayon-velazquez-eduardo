@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/eJS8.css">
+    <script src="JS/eJS8.js"></script>
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <h1 class="title">Ejercicio 8</h1>
+    <form method="POST" class="formulario" name="form">
+        <p>
+            Escriba 3 números diferentes e imprimir el mayor.
+        </p>
+        <div>
+            <input type="text"   class="input-txt" name="valor1"  placeholder="Escriba el 1er digito" onkeypress="return ValidarN(event)">
+            <input type="text"   class="input-txt" name="valor2"  placeholder="Escriba el 2do digito" onkeypress="return ValidarN(event)">
+            <input type="text"   class="input-txt" name="valor3"  placeholder="Escriba el 3er digito" onkeypress="return ValidarN(event)">
+            <input type="text"   class="input-txt" name="textread" value="En espera..." id="width80" readonly="readonly"  >
+            <input type="button" class="input-btn" name="calcu" onclick="return Calcular()" value="Calcular">
+            <input type="button" class="input-btn" name="borrar" onclick="return Borrar()" value="Borrar">
+        </div>
+    </form>
+</body>
+</html>

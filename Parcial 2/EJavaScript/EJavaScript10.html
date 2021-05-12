@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="CSS/eJS10.css">
+    <script src="JS/eJS10.js"></script>
+    <title>Ejercicio 10</title>
+</head>
+
+<body>
+    <h1 class="title">Ejercicio 10</h1>
+    <form method="POST" class="formulario" name="form">
+        <p>
+           Calcular la utilidad que un trabajador recibe en el reparto anual de utilidades si este se asigna como un porcentaje
+           de su saldo mensual que depende de su antiguedad en la empresa de acuerdo a lo siguiente:
+           <ul> 
+            <li><b>Menos de 1 año</b> 5 %del salario</li>
+            <li><b>De 1-2 años   </b>7 %del salario</li>
+            <li><b>De 2-5 años   </b>10 %del salario</li>
+            <li><b>De 5-10 años  </b>15 %del salario</li>
+            <li><b>Más de 10 años</b>20 %del salario</li>
+           </ul>
+        </p>
+        <div>
+            <select name="seleccion" class="Cbox">
+                <option id="op1" selected="select"  >Menos de 1 año</option>
+                <option id="op2">De 1-2 años</option>
+                <option id="op3">De 2-5 años</option>
+                <option id="op4">De 5-10 años</option>
+                <option id="op5">Más de 10 años</option>
+            </select>
+            <input type="text"   class="input-txt" name="valor"  placeholder="Escriba su saldo mensual" onkeypress="return ValidarN(event)">
+            <input type="text"   class="input-txt" name="textread" value="En espera..." readonly="readonly" id="width80" >
+            <input type="button" class="input-btn" name="calcu" onclick="return Calcular()" value="Calcular">
+            <input type="button" class="input-btn" name="borrar" onclick="return Borrar()" value="Borrar">
+        </div>
+    </form>
+
+
+</body>
+
+</html>

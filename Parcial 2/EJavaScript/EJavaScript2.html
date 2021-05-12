@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/eJS2.css">
+    <script src="JS/eJS2.js"></script>
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1 class="title">Ejercicio 2</h1>
+    <form method="POST" class="formulario" name="form">
+        <p>
+            Un vendedor recibe un sueldo base mas 10% extra por comisión 
+            de sus ventas, el vendedor desea saber cuanto dinero obtendrá por concepto
+            de comisión por las tres ventas que realiza en el mes, y el total
+            que ganará
+        </p>
+        <div>
+            <input type="text"   class="input-txt" name="valor1"  placeholder="Escriba el monto1" onkeypress="return validarn(event)">
+            <input type="text"   class="input-txt" name="textread1" value="En espera..." readonly="readonly"  >
+            <input type="text"   class="input-txt" name="valor2"  placeholder="Escriba el monto2" onkeypress="return validarn(event)">
+            <input type="text"   class="input-txt" name="textread2" value="En espera..." readonly="readonly"  >
+            <input type="text"   class="input-txt" name="valor3"  placeholder="Escriba el monto3" onkeypress="return validarn(event)">
+            <input type="text"   class="input-txt" name="textread3" value="En espera..." readonly="readonly"  >
+            <input type="text"   class="input-txt" name="textread" value="Total: 0.0" readonly="readonly" id="total"  >
+            
+
+
+            <input type="button" class="input-btn" name="calcu" onclick="return calcular()" value="Calcular">
+            <input type="button" class="input-btn" name="borrar" onclick="return Borrar()" value="Borrar">
+        </div>
+    </form>
+</body>
+</html>

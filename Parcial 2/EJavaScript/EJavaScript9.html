@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="CSS/eJS9.css">
+    <script src="JS/eJS9.js"></script>
+    <title>Ejercicio 9</title>
+</head>
+
+<body>
+    <h1 class="title">Ejercicio 9</h1>
+    <form method="POST" class="formulario" name="form">
+        <p>
+            Determine la cantidad de dinero que recibirá un trabajador por concepto de hras. extra sabiendo que despues de 40hras.
+            se considera tiempo extra y que las primeras 8 hras. se pagan al doble y el resto al triple do lo normal
+        </p>
+        <div>
+            <input type="text"   class="input-txt" name="valor1"  placeholder="Escriba Cuantas hras. trabajó" onkeypress="return ValidarN(event)">
+            <input type="text"   class="input-txt" name="valor2"  placeholder="Escriba su sueldo por hra." onkeypress="return ValidarN(event)">
+            <input type="text"   class="input-txt" name="textread" value="En espera..." id="width80" readonly="readonly"  >
+            <input type="button" class="input-btn" name="calcu" onclick="return Calcular()" value="Calcular">
+            <input type="button" class="input-btn" name="borrar" onclick="return Borrar()" value="Borrar">
+        </div>
+    </form>
+
+
+</body>
+
+</html>
